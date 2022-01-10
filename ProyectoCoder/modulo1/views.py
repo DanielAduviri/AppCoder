@@ -10,3 +10,18 @@ def crea_curso(self,nombre, camada):
     return HttpResponse(f'Se creo el curso de {nuevo_curso.nombre} con el nro de camada de {nuevo_curso.camada} ')
 #En la linea 9 podria hacer lo de crear un  template especifico para esta view y asi como hicimos en CRUD, etc pero para
 #hacerlo más rápido usamos el httpresponsedd
+
+def inicio(req):
+    return HttpResponse("Estoy en el inicio")
+
+def curso(req):
+    return HttpResponse("Estoy en el curso")
+
+def profesores(req):
+    return HttpResponse("Estoy en el profesores")
+
+def estudiantes(req):
+    return HttpResponse("Estoy en el estudiantes")
+
+def entregables(req):
+    return HttpResponse("Estoy en el entregables")
