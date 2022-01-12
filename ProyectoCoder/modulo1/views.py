@@ -12,16 +12,18 @@ def crea_curso(self,nombre, camada):
 #hacerlo más rápido usamos el httpresponsedd
 
 def inicio(req):
-    return HttpResponse("Estoy en el inicio")
+    return render(req, 'inicio.html')
+    #Para que una vista pueda mostrar un template una vez llamada hay VARIAS formas de hacerlo como con el
+    #Context, los cargadores, etc. Todas sirven para lo mismo
 
 def curso(req):
-    return HttpResponse("Estoy en el curso")
+    return render(req,'curso.html')
 
 def profesores(req):
-    return HttpResponse("Estoy en el profesores")
+    return render(req, 'profesores.html')
 
 def estudiantes(req):
-    return HttpResponse("Estoy en el estudiantes")
+    return render(req, 'estudiantes.html')
 
 def entregables(req):
-    return HttpResponse("Estoy en el entregables")
+    return render(req, 'entregables.html')
